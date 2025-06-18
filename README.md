@@ -39,3 +39,24 @@ Este proyecto tiene como objetivo practicar conceptos de desarrollo con C#, .NET
 ```bash
 git clone https://github.com/WesleyCarloosForte/ProductManager.git
 cd ProductManager
+
+2. Restaurar paquetes:
+```bash
+dotnet restore
+
+3. Configurar la cadena de conexión en appsettings.json del proyecto ProductManager.API:
+"ConnectionStrings": {
+  "DefaultConnection": "Host=localhost;Port=5432;Database=ProductManagerDb;Username=tu_usuario;Password=tu_contraseña"
+}
+
+4. Aplicar migraciones para crear la base de datos:
+```bash
+dotnet ef database update --project ProductManager.Infrastructure
+
+5. Ejecutar la API:
+```bash
+dotnet run --project ProductManager.API
+
+
+
+
