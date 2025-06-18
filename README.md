@@ -56,7 +56,4 @@ dotnet ef database update --project ProductManager.Infrastructure
 5. Ejecutar la API:
 ```bash
 dotnet run --project ProductManager.API
-
-
-
-
+---
