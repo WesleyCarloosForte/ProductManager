@@ -13,8 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Categories\Commands\" />
-    <Folder Include="Categories\Queries\" />
     <Folder Include="Common\Pagination\" />
   </ItemGroup>
 
