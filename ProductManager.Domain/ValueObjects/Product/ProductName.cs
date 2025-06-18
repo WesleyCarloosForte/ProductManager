@@ -7,8 +7,14 @@ namespace ProductManager.Domain.ValueObjects.Product
 
         public ProductName(string value) 
         {
-            if(string.IsNullOrEmpty(value)) 
+            if (string.IsNullOrEmpty(value))
                 throw new ArgumentNullException("Product name is required.");
+
+            else if (value.Length < 4)
+                throw new ArgumentException("Product name must be at least 4 characters long.");
+
+            else if (value.Length > 100)
+                throw new ArgumentException("Product name must not exceed 100 characters.");
 
             Value = value;
         }
