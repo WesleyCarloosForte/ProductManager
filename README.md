@@ -1,8 +1,26 @@
-# ProductManager
+# 🛠️ ProductManager
 
-**Proyecto de práctica para gestionar productos y categorías**
+Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a la gestión de productos y categorías. Este proyecto forma parte de mi portfolio personal, donde aplico buenas prácticas, patrones modernos y principios de diseño escalable.
 
-Este proyecto tiene como objetivo practicar conceptos de desarrollo con C#, .NET 8 y Entity Framework Core, usando PostgreSQL como base de datos. Aplica patrones como Domain-Driven Design (DDD) y Value Objects.
+---
+
+## 🚀 Tecnologías utilizadas
+
+- **.NET 8** + **C# 12**
+- **Entity Framework Core**
+- **PostgreSQL**
+- **Arquitectura limpia**
+- **DDD (Domain-Driven Design)**
+- **CQRS + MediatR**
+- **FluentResults**
+- **Swagger**
+- [ ] Próximamente: **Autenticación JWT**, **SignalR**, **Frontend Angular**
+
+---
+
+## 📁 Estructura del proyecto
+
+ProductManager/ ├── ProductManager.API/ ├── ProductManager.Application/ │ ├── Products/ │ │ ├── Commands/ │ │ │ ├── CreateProduct/ │ │ │ ├── DeleteProduct/ │ │ │ └── UpdateProduct/ │ │ ├── Queries/ │ │ │ ├── GetAllProducts/ │ │ │ └── GetProductById/ │ ├── Categories/ │ │ ├── Commands/ │ │ ├── Queries/ │ ├── Interfaces/ ├── ProductManager.Domain/ │ ├── Entities/ │ ├── ValueObjects/ ├── ProductManager.Infrastructure/ │ ├── Persistence/ ├── ProductManager.Shared/
 
 ---
 
