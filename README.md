@@ -20,7 +20,7 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 
 ## 📁 Estructura del proyecto
 
-ProductManager/ ├── ProductManager.API/ ├── ProductManager.Application/ │ ├── Products/ │ │ ├── Commands/ │ │ │ ├── CreateProduct/ │ │ │ ├── DeleteProduct/ │ │ │ └── UpdateProduct/ │ │ ├── Queries/ │ │ │ ├── GetAllProducts/ │ │ │ └── GetProductById/ │ ├── Categories/ │ │ ├── Commands/ │ │ ├── Queries/ │ ├── Interfaces/ ├── ProductManager.Domain/ │ ├── Entities/ │ ├── ValueObjects/ ├── ProductManager.Infrastructure/ │ ├── Persistence/ ├── ProductManager.Shared/
+
 
 ---
 
@@ -84,5 +84,10 @@ ProductManager/ ├── ProductManager.API/ ├── ProductManager.Applicati
     ```bash
     dotnet run --project ProductManager.API
     ```
+    
+6. Accedé a Swagger en:
 
+    ```bash
+     https://localhost:5001/swagger
+    ```
 ---
