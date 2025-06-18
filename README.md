@@ -41,6 +41,7 @@ git clone https://github.com/WesleyCarloosForte/ProductManager.git
 cd ProductManager
 
 2. Restaurar paquetes:
+
 ```bash
 dotnet restore
 
@@ -50,10 +51,14 @@ dotnet restore
 }
 
 4. Aplicar migraciones para crear la base de datos:
+
 ```bash
 dotnet ef database update --project ProductManager.Infrastructure
 
 5. Ejecutar la API:
+
 ```bash
 dotnet run --project ProductManager.API
+
 ---
+
