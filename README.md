@@ -8,7 +8,7 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 - [Tecnologías implementadas](#-tecnologías-implementadas)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 - [Cómo ejecutar](#cómo-ejecutar)
-- [Migraciones](#-base-de-datos-y-migraciones)
+- [Guía de migraciones](docs/migraciones.md)
 - [Estado del proyecto](#-estado-del-proyecto)
 - [Endpoints de la API](#-endpoints-de-la-api)
 - [Licencia](#-licencia)
@@ -75,9 +75,9 @@ El proyecto sigue una arquitectura en capas basada en separación de responsabil
 
    Para conocer cómo se gestionan las migraciones en este proyecto (desde línea de comandos o Visual Studio), consultá el documento completo:
 
-  📄 [Guía de migraciones](docs/migraciones.md)
+4.  📄 [Guía de migraciones](docs/migraciones.md)
     
-4. Accedé a Swagger en:
+5. Accedé a Swagger en:
 
     ```bash
      https://localhost:5001/swagger
