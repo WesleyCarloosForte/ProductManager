@@ -90,4 +90,17 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
     ```bash
      https://localhost:5001/swagger
     ```
+
+🚧 Estado del proyecto
+[x] Backend funcional con arquitectura limpia
+
+[ ] Autenticación JWT
+
+[ ] Frontend Angular
+
+[ ] Comunicación realtime (SignalR)
+
+[ ] Pruebas unitarias e integración
+
+[ ] Despliegue CI/CD
 ---
