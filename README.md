@@ -131,7 +131,9 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 | DELETE | /Category/delete/{id}    | Elimina una categoría por ID     |
 
 
-📄 Licencia
+## 📄 Licencia
 
-MIT License
+Este proyecto está bajo la licencia [MIT](LICENSE).  
+Podés usarlo, modificarlo y compartirlo con libertad, siempre que mantengas el aviso de copyright.
+
 ---
