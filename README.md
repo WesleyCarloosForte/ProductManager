@@ -4,22 +4,39 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Tecnologías implementadas
 
-- **.NET 8** + **C# 12**
-- **Entity Framework Core**
-- **PostgreSQL**
-- **Arquitectura limpia**
-- **DDD (Domain-Driven Design)**
-- **CQRS + MediatR**
-- **FluentResults**
-- **Swagger**
-- [ ] Próximamente: **Autenticación JWT**, **SignalR**, **Frontend Angular**
+- [x] **.NET 8** + **C# 12**
+- [x] **Entity Framework Core**
+- [x] **PostgreSQL**
+- [x] **Arquitectura limpia**
+- [x] **DDD (Domain-Driven Design)**
+- [x] **CQRS + MediatR**
+- [x] **FluentResults**
+- [x] **Swagger**
+- [ ] **Autenticación JWT**
+- [ ] **Frontend Angular**
+- [ ] **Comunicación en tiempo real con SignalR**
+- [ ] **Docker para desarrollo y despliegue**
+
 
 ---
 
-## 📁 Estructura del proyecto
+## 🧱 Estructura del proyecto
 
+El proyecto sigue una arquitectura en capas basada en separación de responsabilidades:
+
+- **ProductManager.API**  
+  Capa de presentación. Expone los endpoints HTTP y configura la aplicación.
+
+- **ProductManager.Application**  
+  Contiene la lógica de negocio, casos de uso, comandos y consultas (CQRS), validaciones y contratos.
+
+- **ProductManager.Domain**  
+  Define el modelo del dominio: entidades, Value Objects y reglas de negocio puras.
+
+- **ProductManager.Infrastructure**  
+  Implementa la persistencia de datos con EF Core, mapeos y acceso a PostgreSQL.
 
 
 ---
