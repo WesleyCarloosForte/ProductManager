@@ -92,6 +92,7 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
     ```
 
 🚧 Estado del proyecto
+
 [x] Backend funcional con arquitectura limpia
 
 [ ] Autenticación JWT
@@ -103,4 +104,5 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 [ ] Pruebas unitarias e integración
 
 [ ] Despliegue CI/CD
+
 ---
