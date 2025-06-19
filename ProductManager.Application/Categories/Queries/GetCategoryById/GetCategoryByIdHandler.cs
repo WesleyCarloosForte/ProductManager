@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using ProductManager.Application.Common.Exceptions;
 using ProductManager.Application.Common.Response;
+using ProductManager.Application.DTO;
 using ProductManager.Domain.Entities;
 using ProductManager.Domain.Repositories;
 using System;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProductManager.Application.Categories.Queries.GetCategoryById
 {
-    public class GetCategoryByIdHandler:IRequestHandler<GetCategoryByIdCommand,Result<Category>>
+    public class GetCategoryByIdHandler:IRequestHandler<GetCategoryByIdCommand,Result<CategoryDTO>>
     {
 
         private readonly IRepository<Category> _categoryRepository;
@@ -21,13 +22,13 @@ namespace ProductManager.Application.Categories.Queries.GetCategoryById
             _categoryRepository = categoryRepository;
         }
 
-        public async Task<Result<Category>> Handle(GetCategoryByIdCommand request,CancellationToken cancellationToken)
+        public async Task<Result<CategoryDTO>> Handle(GetCategoryByIdCommand request,CancellationToken cancellationToken)
         {
             var existCategory = await _categoryRepository.GetByIdAsync(request.id);
 
             if (existCategory == null) throw new NotFoundException("Category not found!.");
 
-            return Result<Category>.Success(existCategory);
+            return Result<CategoryDTO>.Success(CategoryDTO.Create(existCategory));
         }
     }
 }

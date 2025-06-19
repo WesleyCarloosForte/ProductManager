@@ -1,11 +1,6 @@
 ﻿using ProductManager.Domain.Common;
 using ProductManager.Domain.ValueObjects.Category;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+
 
 namespace ProductManager.Domain.Entities
 {
@@ -14,15 +9,22 @@ namespace ProductManager.Domain.Entities
         public CategoryName Name { get; set; }
         public ICollection<Product> Products { get; set; }
 
-        public Category(CategoryName name) 
+        public Category(CategoryName name, EntityStatus status = EntityStatus.Enabled)
         {
-            Name =name;
+            Name = name;
+            Status = status;
+        }
+
+        public Category(string name, EntityStatus status = EntityStatus.Enabled)
+        {
+            Name = CategoryName.Create(name);
+            Status = status;
         }
         public Category() 
         {
         
         }
 
-        public static Category Create(string name) => new Category { Name = CategoryName.Create(name) };
+        public static Category Create(string name, EntityStatus status = EntityStatus.Enabled) => new Category { Name = CategoryName.Create(name),Status=status };
     }
 }

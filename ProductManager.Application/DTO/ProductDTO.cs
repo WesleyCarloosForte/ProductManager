@@ -29,5 +29,28 @@ namespace ProductManager.Application.DTO
                 Status = product.Status
             };
         }
+        public static IEnumerable<ProductDTO> CreateRange(IEnumerable<Product> product)
+        {
+            try
+            {
+
+                if (!product.Any())
+                    return new List<ProductDTO>();
+
+                var elements = new List<ProductDTO>();
+
+                foreach (Product item in product)
+                {
+                    elements.Add(ProductDTO.Create(item));
+
+                }
+                return elements;
+            }
+            catch (Exception ex)
+            {
+
+                return new List<ProductDTO>();
+            }
+        }
     }
 }
