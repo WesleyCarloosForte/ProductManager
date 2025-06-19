@@ -38,26 +38,6 @@ El proyecto sigue una arquitectura en capas basada en separación de responsabil
 - **ProductManager.Infrastructure**  
   Implementa la persistencia de datos con EF Core, mapeos y acceso a PostgreSQL.
 
-
----
-
-## Tecnologías utilizadas
-
-- .NET 8  
-- Entity Framework Core  
-- PostgreSQL  
-- C# 12 (compatible con .NET 8)  
-- Arquitectura limpia con separación en capas (Domain, Infrastructure, Application, API)
-
----
-
-## Estructura del proyecto
-
-- **ProductManager.API**: API REST para gestionar productos y categorías.  
-- **ProductManager.Application**: Lógica de negocio y casos de uso.  
-- **ProductManager.Domain**: Entidades, Value Objects y reglas del dominio.  
-- **ProductManager.Infrastructure**: Acceso a datos con EF Core y PostgreSQL.
-
 ---
 
 ## Cómo ejecutar
