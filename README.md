@@ -91,21 +91,19 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
      https://localhost:5001/swagger
     ```
     
----
-##🚧 Estado del proyecto
+## 🚧 Estado del proyecto
 
-[x] Backend funcional con arquitectura limpia
+Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas:
 
-[ ] Autenticación JWT
-
-[ ] Frontend Angular
-
-[ ] Comunicación realtime (SignalR)
-
-[ ] Pruebas unitarias e integración
-
-[ ] Despliegue CI/CD
-
+- [x] Backend con arquitectura limpia y CQRS
+- [x] CRUD de Productos y Categorías
+- [x] Base de datos con EF Core + PostgreSQL
+- [x] Documentación Swagger
+- [ ] Autenticación con JWT
+- [ ] Frontend en Angular (en desarrollo)
+- [ ] Comunicación en tiempo real con SignalR
+- [ ] Pruebas unitarias con xUnit
+- [ ] CI/CD (despliegue automático)
 
 ---
 
