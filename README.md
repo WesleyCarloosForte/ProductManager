@@ -134,6 +134,6 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).  
-Podés usarlo, modificarlo y compartirlo con libertad, siempre que mantengas el aviso de copyright.
+Podés usarlo, modificarlo y compartirlo libremente, siempre que se mantenga el aviso de copyright.
 
 ---
