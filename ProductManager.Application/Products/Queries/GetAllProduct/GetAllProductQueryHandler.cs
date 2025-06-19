@@ -24,15 +24,7 @@ namespace ProductManager.Application.Products.Queries.GetAllProduct
         {
             var items = await _repository.GetAllAsync();
 
-           var dtoElements= items.Select( x=> new ProductDTO
-            {
-                CategogyId=x.CategoryId,
-                Id=x.Id,
-                InStock=x.InStock,
-                Status=x.Status,
-                Price=x.Price.Value,
-                Name=x.Name.Value
-            });
+            var dtoElements = ProductDTO.CreateRange(items);
 
             return Result<IEnumerable < ProductDTO >>.Success(dtoElements);
         }
