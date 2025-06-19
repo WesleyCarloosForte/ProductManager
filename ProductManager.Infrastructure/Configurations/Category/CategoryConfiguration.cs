@@ -14,6 +14,9 @@ namespace ProductManager.Infrastructure.Configurations.Category
         {
             builder.ToTable("categories");
 
+            builder.HasKey(x => x.Id);
+
+
             builder.OwnsOne(c => c.Name, name =>
             {
                 name.Property(n => n.Value)
