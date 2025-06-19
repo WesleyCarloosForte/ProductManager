@@ -116,5 +116,6 @@ PUT	/Category	Actualizar categoría existente
 DELETE	/Category/delete/{id}	Eliminar categoría por ID
 
 📄 Licencia
+
 MIT License
 ---
