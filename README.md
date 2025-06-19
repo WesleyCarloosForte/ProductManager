@@ -108,15 +108,28 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 ---
 
 
-##🔌 Endpoints disponibles
+## 🔌 Endpoints de la API
 
-📂 Categorías
-Método	Ruta	Descripción
-GET	/Category/getAll	Obtener todas las categorías
-GET	/Category/getById/{id}	Obtener categoría por ID
-POST	/Category	Crear nueva categoría
-PUT	/Category	Actualizar categoría existente
-DELETE	/Category/delete/{id}	Eliminar categoría por ID
+### 📦 Productos
+
+| Método | Ruta                   | Descripción                     |
+|--------|------------------------|---------------------------------|
+| GET    | /Product/all           | Lista todos los productos       |
+| GET    | /Product/byId/{id}     | Obtiene un producto por ID      |
+| POST   | /Product               | Crea un nuevo producto          |
+| PUT    | /Product               | Actualiza un producto existente |
+| DELETE | /Product/delete/{id}   | Elimina un producto por ID      |
+
+### 📂 Categorías
+
+| Método | Ruta                     | Descripción                      |
+|--------|--------------------------|----------------------------------|
+| GET    | /Category/getAll         | Lista todas las categorías       |
+| GET    | /Category/getById/{id}   | Obtiene una categoría por ID     |
+| POST   | /Category                | Crea una nueva categoría         |
+| PUT    | /Category                | Actualiza una categoría existente|
+| DELETE | /Category/delete/{id}    | Elimina una categoría por ID     |
+
 
 📄 Licencia
 
