@@ -105,4 +105,13 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 
 [ ] Despliegue CI/CD
 
+🔌 Endpoints disponibles
+📂 Categorías
+Método	Ruta	Descripción
+GET	/Category/getAll	Obtener todas las categorías
+GET	/Category/getById/{id}	Obtener categoría por ID
+POST	/Category	Crear nueva categoría
+PUT	/Category	Actualizar categoría existente
+DELETE	/Category/delete/{id}	Eliminar categoría por ID
+
 ---
