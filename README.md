@@ -90,7 +90,8 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
     ```bash
      https://localhost:5001/swagger
     ```
-
+    
+---
 ##🚧 Estado del proyecto
 
 [x] Backend funcional con arquitectura limpia
@@ -104,6 +105,10 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 [ ] Pruebas unitarias e integración
 
 [ ] Despliegue CI/CD
+
+
+---
+
 
 ##🔌 Endpoints disponibles
 
