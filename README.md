@@ -62,13 +62,11 @@ El proyecto sigue una arquitectura en capas basada en separación de responsabil
     dotnet restore
     ```
 
-3. Configurar la cadena de conexión en `appsettings.json` del proyecto `ProductManager.API`:
+3. Migraciones:
 
-    ```json
-    "ConnectionStrings": {
-      "DefaultConnection": "Host=localhost;Port=5432;Database=ProductManagerDb;Username=tu_usuario;Password=tu_contraseña"
-    }
-    ```
+   Para conocer cómo se gestionan las migraciones en este proyecto (desde línea de comandos o Visual Studio), consultá el documento completo:
+
+  📄 [Guía de migraciones](docs/migraciones.md)
 
 4. Aplicar migraciones para crear la base de datos:
 
