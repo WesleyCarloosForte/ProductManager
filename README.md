@@ -67,20 +67,8 @@ El proyecto sigue una arquitectura en capas basada en separación de responsabil
    Para conocer cómo se gestionan las migraciones en este proyecto (desde línea de comandos o Visual Studio), consultá el documento completo:
 
   📄 [Guía de migraciones](docs/migraciones.md)
-
-4. Aplicar migraciones para crear la base de datos:
-
-    ```bash
-    dotnet ef database update --project ProductManager.Infrastructure
-    ```
-
-5. Ejecutar la API:
-
-    ```bash
-    dotnet run --project ProductManager.API
-    ```
     
-6. Accedé a Swagger en:
+4. Accedé a Swagger en:
 
     ```bash
      https://localhost:5001/swagger
