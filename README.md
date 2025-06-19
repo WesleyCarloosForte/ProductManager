@@ -3,6 +3,15 @@
 Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a la gestión de productos y categorías. Este proyecto forma parte de mi portfolio personal, donde aplico buenas prácticas, patrones modernos y principios de diseño escalable.
 
 ---
+## 📚 Contenido
+
+- [Tecnologías implementadas](#-tecnologías-implementadas)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Cómo ejecutar](#-cómo-ejecutar)
+- [Migraciones](#-base-de-datos-y-migraciones)
+- [Estado del proyecto](#-estado-del-proyecto)
+- [Endpoints de la API](#-endpoints-de-la-api)
+- [Licencia](#-licencia)
 
 ## 🚀 Tecnologías implementadas
 
