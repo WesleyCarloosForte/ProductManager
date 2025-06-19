@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using ProductManager.Application.Common.Response;
+using ProductManager.Application.DTO;
 using ProductManager.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,6 @@ using System.Threading.Tasks;
 
 namespace ProductManager.Application.Categories.Queries.GetAllCategory
 {
-    public record GetAllCategoryCommand():IRequest<Result<IEnumerable<Category>>>;
+    public record GetAllCategoryCommand():IRequest<Result<IEnumerable<CategoryDTO>>>;
 
 }
