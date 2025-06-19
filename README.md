@@ -86,6 +86,7 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 - [ ] Frontend en Angular (en desarrollo)
 - [ ] Comunicación en tiempo real con SignalR
 - [ ] Pruebas unitarias con xUnit
+- [ ] Docker
 - [ ] CI/CD (despliegue automático)
 
 ---
