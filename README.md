@@ -8,7 +8,7 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 - [Tecnologías implementadas](#-tecnologías-implementadas)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 - [Cómo ejecutar](#cómo-ejecutar)
-- [Guía de migraciones](docs/migraciones.md)
+- [Guía de migraciones](/migraciones.md)
 - [Estado del proyecto](#-estado-del-proyecto)
 - [Endpoints de la API](#-endpoints-de-la-api)
 - [Licencia](#-licencia)
