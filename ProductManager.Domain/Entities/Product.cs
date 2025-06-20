@@ -1,4 +1,5 @@
 ﻿using ProductManager.Domain.Common;
+using ProductManager.Domain.Common.Enums;
 using ProductManager.Domain.ValueObjects.Product;
 using System;
 using System.Collections.Generic;
