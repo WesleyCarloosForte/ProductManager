@@ -75,7 +75,7 @@ El proyecto sigue una arquitectura en capas basada en separación de responsabil
 
    Para conocer cómo se gestionan las migraciones en este proyecto (desde línea de comandos o Visual Studio), consultá el documento completo:
 
-4.  📄 [Guía de migraciones](docs/migraciones.md)
+4.  📄 [Guía de migraciones](/migraciones.md)
     
 5. Accedé a Swagger en:
 
