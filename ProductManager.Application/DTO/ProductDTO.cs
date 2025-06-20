@@ -1,4 +1,4 @@
-﻿using ProductManager.Domain.Common;
+﻿using ProductManager.Domain.Common.Enums;
 using ProductManager.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,14 +8,12 @@ using System.Threading.Tasks;
 
 namespace ProductManager.Application.DTO
 {
-    public class ProductDTO
+    public class ProductDTO:BaseDTO
     {
-        public Guid Id { get; set; }
         public decimal Price { get; set; }
         public bool InStock {  get; set; }
         public string Name { get; set; }
         public Guid CategogyId { get; set; }
-        public EntityStatus Status { get; set; }
 
         public static ProductDTO Create(Product product)
         {
