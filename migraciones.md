@@ -15,16 +15,16 @@ Este proyecto utiliza **Entity Framework Core** con un `DbContext` ubicado en la
 2. Creá la migración desde la raíz del proyecto:
 
    ```bash
-   dotnet ef migrations add InitialCreate \
-     --project ProductManager.Infrastructure \
+   dotnet ef migrations add InitialCreate 
+     --project ProductManager.Infrastructure 
      --startup-project ProductManager.API
    ```
 
 3. Aplicá la migración a la base de datos:
 
    ```bash
-   dotnet ef database update \
-     --project ProductManager.Infrastructure \
+   dotnet ef database update 
+     --project ProductManager.Infrastructure 
      --startup-project ProductManager.API
    ```
 
