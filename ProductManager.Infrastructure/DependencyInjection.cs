@@ -23,7 +23,8 @@ namespace ProductManager.Infrastructure
 
             services.AddTransient<IRepository<Category>, EfRepository<Category>>();
             services.AddTransient<IRepository<Product>, EfRepository<Product>>();
-            
+            services.AddTransient<IRepository<User>, EfRepository<User>>();
+
             return services;
         }
     }

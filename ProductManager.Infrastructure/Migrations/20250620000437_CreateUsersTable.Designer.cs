@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ProductManager.Infrastructure.Data;
@@ -11,9 +12,11 @@ using ProductManager.Infrastructure.Data;
 namespace ProductManager.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250620000437_CreateUsersTable")]
+    partial class CreateUsersTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -184,25 +187,6 @@ namespace ProductManager.Infrastructure.Migrations
 
             modelBuilder.Entity("ProductManager.Domain.Entities.User", b =>
                 {
-                    b.OwnsOne("ProductManager.Domain.ValueObjects.User.UserFullName", "FullName", b1 =>
-                        {
-                            b1.Property<Guid>("UserId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<string>("Value")
-                                .IsRequired()
-                                .HasMaxLength(100)
-                                .HasColumnType("character varying(100)")
-                                .HasColumnName("full_name");
-
-                            b1.HasKey("UserId");
-
-                            b1.ToTable("users");
-
-                            b1.WithOwner()
-                                .HasForeignKey("UserId");
-                        });
-
                     b.OwnsOne("ProductManager.Domain.ValueObjects.User.UserLogin", "Login", b1 =>
                         {
                             b1.Property<Guid>("UserId")
@@ -240,9 +224,6 @@ namespace ProductManager.Infrastructure.Migrations
                             b1.WithOwner()
                                 .HasForeignKey("UserId");
                         });
-
-                    b.Navigation("FullName")
-                        .IsRequired();
 
                     b.Navigation("Login")
                         .IsRequired();

@@ -9,8 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductManager.Application.Products.Commands.UpdateProduct
+namespace ProductManager.Application.Users.Commands.UpdateUser
 {
-    public record UpdateProductCommand(Guid id,Guid categoryId,decimal price,string name,EntityStatus Status,bool inStock):IRequest<Result<ProductDTO>>;
+    public record UpdateUserCommand(Guid id,string fullName, string login, string password, List<Permission> Permission, EntityStatus Status = EntityStatus.Enabled) : IRequest<Result<UserDTO>>;
   
 }

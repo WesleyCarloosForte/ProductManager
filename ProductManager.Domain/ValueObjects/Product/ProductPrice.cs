@@ -24,7 +24,7 @@ namespace ProductManager.Domain.ValueObjects.Product
 
             return Value == other.Value;
         }
-        public override bool Equals(object? obj) => base.Equals(obj as ProductPrice);
+        public override bool Equals(object? obj) => obj is ProductPrice other && Equals(other);
         public override int GetHashCode() => Value.GetHashCode();
         public override string ToString() => Value.ToString();
 
