@@ -15,18 +15,18 @@ namespace ProductManager.API.Controllers
     [Route("[Controller]")]
     public class CategoryController:ControllerBase
     {
-        private readonly IMediator _mediator;
+        private readonly ISender _sender;
 
-        public CategoryController(IMediator mediator)
+        public CategoryController(ISender sender)
         {
-            _mediator = mediator;
+            _sender = sender;
         }
 
         [HttpGet("getAll")]
         public async Task<ActionResult<Result<IEnumerable<CategoryDTO>>>> GetAll()
         {
             var command = new GetAllCategoryCommand();
-            var result = await _mediator.Send(command);
+            var result = await _sender.Send(command);
 
             return Ok(result);
         }
@@ -35,7 +35,7 @@ namespace ProductManager.API.Controllers
         public async Task<ActionResult<Result<CategoryDTO>>> GetById(Guid id)
         {
             var command = new GetCategoryByIdCommand(id);
-            var result = await _mediator.Send(command);
+            var result = await _sender.Send(command);
 
             return Ok(result);
         }
@@ -43,7 +43,7 @@ namespace ProductManager.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Result<CategoryDTO>>> Greate(CreateCategoryCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await _sender.Send(command);
 
             return Ok(result);
         }
@@ -51,7 +51,7 @@ namespace ProductManager.API.Controllers
         [HttpPut]
         public async Task<ActionResult<Result<CategoryDTO>>> Update(UpdateCategoryCommand command)
         {
-            var result = await _mediator.Send(command);
+            var result = await _sender.Send(command);
 
             return Ok(result);
         }
@@ -60,7 +60,7 @@ namespace ProductManager.API.Controllers
         public async Task<ActionResult<Result<CategoryDTO>>> delete(Guid id)
         {
             var command = new DeleteCategoryCommand(id);
-            var result =await _mediator.Send(command);
+            var result =await _sender.Send(command);
 
             return Ok(result);
         }
