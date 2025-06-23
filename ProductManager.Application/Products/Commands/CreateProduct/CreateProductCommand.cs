@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using ProductManager.Application.Common.Response;
-using ProductManager.Domain.Common;
+using ProductManager.Domain.Common.Enums;
 using ProductManager.Domain.Entities;
 using System;
 using System.Collections.Generic;

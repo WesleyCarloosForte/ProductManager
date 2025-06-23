@@ -1,4 +1,4 @@
-﻿using ProductManager.Domain.Common;
+﻿using ProductManager.Domain.Common.Enums;
 using ProductManager.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,11 +9,9 @@ using System.Threading.Tasks;
 
 namespace ProductManager.Application.DTO
 {
-    public class CategoryDTO
+    public class CategoryDTO:BaseDTO
     {
-        public Guid Id { get; set; }
         public string Name { get; set; } 
-        public EntityStatus Status { get; set; }
         public CategoryDTO(Guid id,string name,EntityStatus status)
         {
             Id = id;

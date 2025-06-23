@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProductManager.Application.Common.Response;
+using ProductManager.Application.DTO;
 using ProductManager.Application.Products.Commands.CreateProduct;
 using ProductManager.Application.Products.Commands.DeleteProduct;
 using ProductManager.Application.Products.Commands.UpdateProduct;
@@ -28,14 +29,14 @@ namespace ProductManager.API.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<Result<Product>>> Update(UpdateProductCommand command)
+        public async Task<ActionResult<Result<ProductDTO>>> Update(UpdateProductCommand command)
         {
             var product = await _mediator.Send(command);
             return Ok(  product );
         }
 
         [HttpGet("byId/{id}")]
-        public async Task<ActionResult<Result<Product>>> GetById(Guid id)
+        public async Task<ActionResult<Result<ProductDTO>>> GetById(Guid id)
         {
 
             var query = new GetProductByIdQuery(id);
@@ -45,7 +46,7 @@ namespace ProductManager.API.Controllers
         }
 
         [HttpDelete("delete/{id}")]
-        public async Task<ActionResult<Result<Product>>> Delete(Guid id)
+        public async Task<ActionResult<Result<ProductDTO>>> Delete(Guid id)
         {
 
             var command = new DeleteProductCommand(id);
@@ -54,7 +55,7 @@ namespace ProductManager.API.Controllers
             return Ok(new { result });
         }
         [HttpGet("all")]
-        public async Task<ActionResult<Result<IEnumerable<Product>>>> GetAll()
+        public async Task<ActionResult<Result<IEnumerable<ProductDTO>>>> GetAll()
         {
             var query = new GetAllProductQuery();
 
