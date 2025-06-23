@@ -13,6 +13,9 @@ namespace ProductManager.Domain.Common.Enums
         Product_Delete,
         Category_Read,
         Category_Write,
-        Category_Delete
+        Category_Delete,
+        User_Read,
+        User_Write,
+        User_Delete,
     }
 }
