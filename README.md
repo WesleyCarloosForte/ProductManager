@@ -123,7 +123,7 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 | PUT    | /Category                | Actualiza una categoría existente|
 | DELETE | /Category/delete/{id}    | Elimina una categoría por ID     |
 
-### 👤 UsersController
+### 👤 Usuarios
 
 | Método | Ruta               | Descripción                        |
 |--------|--------------------|------------------------------------|
