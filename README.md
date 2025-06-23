@@ -23,7 +23,7 @@ Aplicación backend desarrollada en .NET 8 con arquitectura limpia, orientada a 
 - [x] **CQRS + MediatR**
 - [x] **FluentResults**
 - [x] **Swagger**
-- [ ] **Autenticación JWT**
+- [-] **Autenticación JWT**
 - [ ] **Frontend Angular**
 - [ ] **Comunicación en tiempo real con SignalR**
 - [ ] **Docker para desarrollo y despliegue**
@@ -91,7 +91,7 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 - [x] CRUD de Productos y Categorías
 - [x] Base de datos con EF Core + PostgreSQL
 - [x] Documentación Swagger
-- [ ] Autenticación con JWT
+- [-] Autenticación con JWT
 - [ ] Frontend en Angular (en desarrollo)
 - [ ] Comunicación en tiempo real con SignalR
 - [ ] Pruebas unitarias con xUnit
