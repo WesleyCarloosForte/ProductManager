@@ -123,6 +123,15 @@ Este proyecto está en desarrollo activo. Próximas funcionalidades planificadas
 | PUT    | /Category                | Actualiza una categoría existente|
 | DELETE | /Category/delete/{id}    | Elimina una categoría por ID     |
 
+### 👤 UsersController
+
+| Método | Ruta               | Descripción                        |
+|--------|--------------------|------------------------------------|
+| GET    | /api/users         | Obtiene todos los usuarios         |
+| GET    | /api/users/{id}    | Obtiene un usuario por ID          |
+| POST   | /api/users         | Crea un nuevo usuario              |
+| PUT    | /api/users/{id}    | Actualiza un usuario existente     |
+| DELETE | /api/users/{id}    | Elimina un usuario por ID          |
 
 ## 📄 Licencia
 
