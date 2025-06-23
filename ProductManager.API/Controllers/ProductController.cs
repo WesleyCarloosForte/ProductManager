@@ -14,23 +14,23 @@ namespace ProductManager.API.Controllers
     [Route("[controller]")]
     public class ProductController: ControllerBase
     {
-        private readonly IMediator _mediator;
+        private readonly ISender _sender;
 
-        public ProductController(IMediator mediator)
+        public ProductController(ISender sender)
         {
-            _mediator = mediator;
+            _sender = sender;
         }
         [HttpPost]
         public async Task<ActionResult<Result<Guid>>> Create(CreateProductCommand command)
         {
-            var id = await _mediator.Send(command);
+            var id = await _sender.Send(command);
             return Ok(new { id });
         }
 
         [HttpPut]
         public async Task<ActionResult<Result<Product>>> Update(UpdateProductCommand command)
         {
-            var product = await _mediator.Send(command);
+            var product = await _sender.Send(command);
             return Ok(  product );
         }
 
@@ -40,7 +40,7 @@ namespace ProductManager.API.Controllers
 
             var query = new GetProductByIdQuery(id);
 
-            var result = await _mediator.Send(query);
+            var result = await _sender.Send(query);
             return Ok(new { result });
         }
 
@@ -50,7 +50,7 @@ namespace ProductManager.API.Controllers
 
             var command = new DeleteProductCommand(id);
 
-            var result = await _mediator.Send(command);
+            var result = await _sender.Send(command);
             return Ok(new { result });
         }
         [HttpGet("all")]
@@ -58,7 +58,7 @@ namespace ProductManager.API.Controllers
         {
             var query = new GetAllProductQuery();
 
-            var result = await _mediator.Send(query);
+            var result = await _sender.Send(query);
 
             return Ok(result);
         }
